@@ -51,6 +51,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            user-select: none;
         }
 
         .btn:hover {
@@ -61,7 +62,7 @@
 <body>
 
     <div class="dialog">
-        <h2>Você quer casar comigo?</h2>
+        <h2>Você quer continuar?</h2>
     </div>
 
     <!-- Botão Sim com link -->
@@ -88,8 +89,14 @@
             button.style.top = `${randomTop}px`;
         }
 
-        // Faz o botão "Não" fugir constantemente enquanto o mouse estiver sobre ele
+        // Faz o botão "Não" fugir no desktop
         btnNao.addEventListener('mousemove', () => moveButton(btnNao));
+
+        // Faz o botão "Não" fugir no celular (a cada toque)
+        btnNao.addEventListener('touchstart', (e) => {
+            e.preventDefault(); // Impede que o botão seja clicado no toque
+            moveButton(btnNao);
+        });
 
         // Posição inicial dos botões no carregamento
         window.onload = () => {
