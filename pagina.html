@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quer casar comigo?</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(to bottom, #ffe6f0, #fff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: 'Segoe UI', sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #d6336c;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.3rem;
+            color: #444;
+            margin-bottom: 30px;
+        }
+
+        .heart {
+            color: #ff3366;
+            font-size: 3rem;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        .btn {
+            padding: 12px 30px;
+            background-color: #d6336c;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #a91f4e;
+        }
+
+        .flowers {
+            position: absolute;
+            width: 120px;
+            opacity: 0.1;
+        }
+
+        .flowers:nth-child(1) {
+            top: 10%;
+            left: 5%;
+            transform: rotate(20deg);
+        }
+
+        .flowers:nth-child(2) {
+            top: 20%;
+            right: 5%;
+            transform: rotate(-15deg);
+        }
+
+        .flowers:nth-child(3) {
+            bottom: 10%;
+            left: 10%;
+            transform: rotate(10deg);
+        }
+
+        .flowers:nth-child(4) {
+            bottom: 15%;
+            right: 10%;
+            transform: rotate(-10deg);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Flores decorativas -->
+    <img src="https://i.imgur.com/d5E0M7B.png" class="flowers">
+    <img src="https://i.imgur.com/d5E0M7B.png" class="flowers">
+    <img src="https://i.imgur.com/d5E0M7B.png" class="flowers">
+    <img src="https://i.imgur.com/d5E0M7B.png" class="flowers">
+
+    <div class="container">
+        <div class="heart">💖</div>
+        <h1>Quer casar comigo?</h1>
+        <p>Desde que te conheci, percebi que você é o amor da minha vida.<br>
+        <strong>Quero estar ao seu lado hoje, amanhã e para sempre.</strong></p>
+
+        <a href="#" class="btn">Sim, mil vezes sim!</a>
+    </div>
+
+</body>
+</html>
