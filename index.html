@@ -61,7 +61,7 @@
 <body>
 
     <div class="dialog">
-        <h2>Você quer continuar?</h2>
+        <h2>Você quer casar comigo?</h2>
     </div>
 
     <!-- Botão Sim com link -->
@@ -88,8 +88,8 @@
             button.style.top = `${randomTop}px`;
         }
 
-        // Faz o botão "Não" fugir ao passar o mouse
-        btnNao.addEventListener('mouseenter', () => moveButton(btnNao));
+        // Faz o botão "Não" fugir constantemente enquanto o mouse estiver sobre ele
+        btnNao.addEventListener('mousemove', () => moveButton(btnNao));
 
         // Posição inicial dos botões no carregamento
         window.onload = () => {
